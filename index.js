@@ -17,25 +17,25 @@ let numeroPokedex=prompt("Ingrese un número para verificar la region de su poke
     }
 
 let tipoPokemon= prompt ("¿Su pokemon es fuego, agua, tierra o eléctrico?")
+do{
     switch (tipoPokemon){
         case "fuego":
-            let fuegoTipo= " y es tipo fuego (es debil a pokemones tipo agua, tierra y roca)"
-            clasificacionPokemon=fuegoTipo
+            clasificacionPokemon= " y es tipo fuego (es debil a pokemones tipo agua, tierra y roca)"
             break;
         case "agua":
-            let aguaTipo= " y es tipo agua (es debil a pokemones tipo eléctrico y planta)"
-            clasificacionPokemon=aguaTipo
+            clasificacionPokemon= " y es tipo agua (es debil a pokemones tipo eléctrico y planta)"
             break;
         case "tierra":
-            let tierraTipo= " y es tipo tierra (es debil a  pokemones tipo agua, hielo y planta)"
-            clasificacionPokemon=tierraTipo
+            clasificacionPokemon= " y es tipo tierra (es debil a  pokemones tipo agua, hielo y planta)"
             break;
         case "eléctrico":
         case "electrico":
-            let electricoTipo= " y es tipo eléctrico (es debil a pokemones tipo tierra)"
-            clasificacionPokemon=electricoTipo
+            clasificacionPokemon= " y es tipo eléctrico (es debil a pokemones tipo tierra)"
             break;
+            default:
+                alert("Vuelva a ingresar un tipo pokemon valido")
+    }
 }
-for (var i = 0; i < 5; i++){
+while (tipoPokemon= "fuego", "agua", "electrico", "eléctrico", "tierra")
+
 document.write("Bienvenido " + usuarioIngresado + " "+ regionPokedex + clasificacionPokemon)
-}
